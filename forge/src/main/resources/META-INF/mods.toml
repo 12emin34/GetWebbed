@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[45,)"
+license = "GNU LGPL 3.0"
+issueTrackerURL = "https://github.com/GetWebbed/issues"
+[[mods]]
+modId = "getwebbed"
+version = "${version}"
+displayName = "GetWebbed"
+#updateJSONURL="http://myurl.me/" #optional
+#displayURL="http://example.com/" #optional
+#logoFile = "icon.png" #optional
+#credits="Thanks for this example mod goes to Java" #optional
+authors = "12emin34"
+#displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
+
+description = '''
+Makes spiders use cobweb in their attacks!
+'''
+[[dependencies.getwebbed]]
+modId = "forge"
+mandatory = true
+versionRange = "[45,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.getwebbed]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.4,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.getwebbed]]
+modId = "architectury"
+mandatory = true
+versionRange = "[8.1.87,)"
+ordering = "AFTER"
+side = "BOTH"

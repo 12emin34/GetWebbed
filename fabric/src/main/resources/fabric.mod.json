@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "getwebbed",
+  "version": "${version}",
+  "name": "GetWebbed",
+  "description": "Makes spiders use cobweb in their attacks!",
+  "authors": [
+    "12emin34"
+  ],
+  "contact": {},
+  "license": "GNU LGPL 3.0",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me._12emin34.getwebbed.fabric.GetWebbedFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.11.19"
+  }
+}
