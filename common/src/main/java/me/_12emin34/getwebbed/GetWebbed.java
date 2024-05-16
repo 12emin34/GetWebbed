@@ -12,15 +12,19 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class GetWebbed {
     public static final String MOD_ID = "getwebbed";
+    private static Logger LOGGER;
 
     private GetWebbed() {
         throw new IllegalStateException("This class is not intended to be instantiated");
     }
 
     public static void init() {
+        LOGGER = LoggerFactory.getLogger("GetWebbed");
         EntityEvent.LIVING_HURT.register(GetWebbed::onHurt);
     }
 
